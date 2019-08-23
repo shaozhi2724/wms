@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{516A4EC5-84A7-451E-837F-6FD2605E501D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS.Model</RootNamespace>
+    <AssemblyName>WMS.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DemoLicense|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DemoLicense\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DemoLicense|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\DemoLicense\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATC_Approve.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ATC_ApproveNotification.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ATC_User.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ATC_UserPage.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BUS_ReviewBack.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CargoSpaceStoreDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicLabel.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryDemolition.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStatistic.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStatisticDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabelStructure.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabelTask.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PDATask.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductStructure.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegulatoryCode.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RegulatoryCustomer.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Review.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StorageStructure.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreBill.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreBillBarCode.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreBillDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreDetailChangeHistory.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreInHistory.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreOutErrorLog.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreOutHistory.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreOutReviewIdentity.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnqualifiedStoreDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSCargoSpaceStoreDetailChangeHistory.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMSContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WMSContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="WMSMonitoringSetting.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSReviewHistory.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSScannedRegulatoryCode.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSStoreBillDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSStoreInDetail.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSUser.cs">
+      <DependentUpon>WMSContext.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="WMSContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WMSContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="WMSContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WMSContext.edmx</DependentUpon>
+      <LastGenOutput>WMSContext.Context.cs</LastGenOutput>
+    </None>
+    <None Include="WMSContext.edmx.diagram">
+      <DependentUpon>WMSContext.edmx</DependentUpon>
+    </None>
+    <None Include="WMSContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WMSContext.edmx</DependentUpon>
+      <LastGenOutput>WMSContext.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

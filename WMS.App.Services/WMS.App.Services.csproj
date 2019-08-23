@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C884AB24-62B9-442C-BD44-5D8587416C89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS.App.Services</RootNamespace>
+    <AssemblyName>WMS.App.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DemoLicense|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DemoLicense\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DemoLicense|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\DemoLicense\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CargoSpaceStoreDetailService.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="CodeViewModel.cs" />
+    <Compile Include="DealerService.cs" />
+    <Compile Include="ELabelService.cs" />
+    <Compile Include="ExportTicketViewModel.cs" />
+    <Compile Include="ICargoSpaceStoreDetailService.cs" />
+    <Compile Include="IDealerService.cs" />
+    <Compile Include="IELabelService.cs" />
+    <Compile Include="IInventoryDemolitionService.cs" />
+    <Compile Include="IInventoryService.cs" />
+    <Compile Include="ILabelStructureService.cs" />
+    <Compile Include="ILabelTaskService.cs" />
+    <Compile Include="ICategoryService.cs" />
+    <Compile Include="InventoryDemolitionService.cs" />
+    <Compile Include="InventoryDetailViewModel.cs" />
+    <Compile Include="InventoryService.cs" />
+    <Compile Include="InventoryViewModel.cs" />
+    <Compile Include="IProductService.cs" />
+    <Compile Include="IProductStructureService.cs" />
+    <Compile Include="IRegulatoryCodeService.cs" />
+    <Compile Include="IReviewService.cs" />
+    <Compile Include="ISecurityService.cs" />
+    <Compile Include="IStorageStructureService.cs" />
+    <Compile Include="IStoreBillService.cs" />
+    <Compile Include="IStoreInHistoryService.cs" />
+    <Compile Include="IStoreOutHistoryService.cs" />
+    <Compile Include="IWarehouseService.cs" />
+    <Compile Include="LabelStructureService.cs" />
+    <Compile Include="LabelTaskService.cs" />
+    <Compile Include="MoreProductForReview.cs" />
+    <Compile Include="ProductSearchParameter.cs" />
+    <Compile Include="ProductService.cs" />
+    <Compile Include="ProductStructureService.cs" />
+    <Compile Include="RegulatoryCodeService.cs" />
+    <Compile Include="RegulatoryCodeStatisticViewMode.cs" />
+    <Compile Include="ReviewService.cs" />
+    <Compile Include="ScanRegulatoryCodeViewModel.cs" />
+    <Compile Include="SecurityService.cs" />
+    <Compile Include="StorageStructureELabelViewModel.cs" />
+    <Compile Include="StorageStructureService.cs" />
+    <Compile Include="StorageStructureTreeViewModel.cs" />
+    <Compile Include="StoreBillDetailViewModel.cs" />
+    <Compile Include="StoreBillOutDetailViewModel.cs" />
+    <Compile Include="StoreBillService.cs" />
+    <Compile Include="StoreBillStatuses.cs" />
+    <Compile Include="StoreInHistoryService.cs" />
+    <Compile Include="StoreOutHistoryService.cs" />
+    <Compile Include="TaskStatuses.cs" />
+    <Compile Include="WarehouseService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WMS.Model\WMS.Model.csproj">
+      <Project>{516A4EC5-84A7-451E-837F-6FD2605E501D}</Project>
+      <Name>WMS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

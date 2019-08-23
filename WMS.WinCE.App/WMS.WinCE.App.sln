@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS.WinCE.App", "WMS.WinCE.App\WMS.WinCE.App.csproj", "{C708EF4B-3D09-41F0-9012-88C0F01637D4}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SmartDevice.App-SY|Any CPU = SmartDevice.App-SY|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C708EF4B-3D09-41F0-9012-88C0F01637D4}.SmartDevice.App-SY|Any CPU.ActiveCfg = SmartDevice.App-SY|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

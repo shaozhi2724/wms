@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="终端接口XML Schema-3.0.xsd" License="" SN="1201004295" Version="3.0">
+	<Events>
+		<Event Name="SalesWareHouseOut" MainAction="WareHouseOut">
+			<ActionMapping>
+				<Action Name="WareHouseOut">
+					<ActionData>CorpOrderID</ActionData>
+					<ActionData>Actor</ActionData>
+					<ActionData>ActDate</ActionData>
+					<ActionData>Code</ActionData>
+				</Action>
+				<Action Name="ProductInfoWrap">
+					<ActionData>CorpProductID</ActionData>
+					<ActionData>CorpBatchNo</ActionData>
+					<ActionData>ProduceDate</ActionData>
+					<ActionData>Actor</ActionData>
+					<ActionData>ActDate</ActionData>
+					<ActionData>Code</ActionData>
+				</Action>
+				<Action Name="CodeActive">
+					<ActionData>Code</ActionData>
+				</Action>
+			</ActionMapping>
+			<DataMaping>
+				<MetaData Name="CorpOrderID" Type="String"/>
+				<MetaData Name="Actor" Type="String"/>
+				<MetaData Name="CorpProductID" Type="String"/>
+				<MetaData Name="CorpBatchNo" Type="String"/>
+				<MetaData Name="ProduceDate" Type="Date"/>
+				<MetaData Name="ActDate" Type="Date"/>
+				<MetaData Name="Code" Type="String"/>
+			</DataMaping>
+			<DataDesc>
+				<MetaDataDesc MetaName="Actor" IsParent="true">
+					<MetaDataDesc MetaName="Code" IsParent="false"/>
+				</MetaDataDesc>
+				<MetaDataDesc MetaName="CorpOrderID" IsParent="true">
+					<MetaDataDesc MetaName="Code" IsParent="false"/>
+				</MetaDataDesc>
+			</DataDesc>
+			<DataField>
+				<Data CorpOrderID="20140414113408" Code="88126830000029182126" Actor="yonghu" ActDate="2014-04-14" CorpProductID="" CorpBatchNo="" ToCorpID="24384468" />
+			</DataField>
+		</Event>
+	</Events>
+</Document>

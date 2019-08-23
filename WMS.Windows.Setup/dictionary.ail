@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DICTIONARY type="multilanguage">
+  <ENTRY id="AI.LaunchCondition.No9X">
+    <STRING lang="zh" value="[ProductName] 不能安装在 [WindowsType9XDisplay]"/>
+  </ENTRY>
+</DICTIONARY>

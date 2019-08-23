@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WMS.Windows.App.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AutomaticOutStoreInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="AutomaticOutStore" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RootPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bokesys.com</Value>
+    </Setting>
+    <Setting Name="AllowNoCodeReview" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SystemSignStoreInPosition" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WMSStandalone" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RemoteManifest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/BokesysSoft/WMS.manifest</Value>
+    </Setting>
+    <Setting Name="AutoCheckForUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PrintCargoBarcode" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AllowNoCodeStoreIn" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MaxOutTaskCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="InDataFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\InData</Value>
+    </Setting>
+    <Setting Name="OutDataFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\OutData</Value>
+    </Setting>
+    <Setting Name="UseYuanboControl" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

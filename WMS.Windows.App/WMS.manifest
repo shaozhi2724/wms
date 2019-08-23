@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Update this file when you have a new version. 
+     Upload both this file and the below zip file. -->
+<manifest>
+  <date>2014-05-22T23:21:52</date>
+  <appname>WMS仓库管理系统</appname>
+  <version>1.0.0.0</version>
+  <info>http://localhost/BokesysSoft/WMSUpdater1000.xhtml</info>
+  <download>http://localhost/BokesysSoft/files/WMS.1.0.0.0.zip</download>
+</manifest>

@@ -1,0 +1,354 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C708EF4B-3D09-41F0-9012-88C0F01637D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS.SmartDevice.App</RootNamespace>
+    <AssemblyName>WMS.SmartDevice.App</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>4118C335-430C-497f-BE48-11C3316B135E</PlatformID>
+    <OSVersion>5.01</OSVersion>
+    <DeployDirSuffix>WMS.SmartDevice.App</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>Resources\pda.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SmartDevice.App-SY|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\SmartDevice.App-SY\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PocketPC,SY</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=3.0.3600.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmProductSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductSummary.Designer.cs">
+      <DependentUpon>FrmProductSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CargoSpaceStoreDetail.cs" />
+    <Compile Include="FrmCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCollection.Designer.cs">
+      <DependentUpon>FrmCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInitStoreIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInitStoreIn.Designer.cs">
+      <DependentUpon>FrmInitStoreIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInventoryQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventoryQuery.Designer.cs">
+      <DependentUpon>FrmInventoryQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductSummaryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductSummaryDetail.Designer.cs">
+      <DependentUpon>FrmProductSummaryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductTransferSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductTransferSource.Designer.cs">
+      <DependentUpon>FrmProductTransferSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoreIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoreIn.Designer.cs">
+      <DependentUpon>FrmStoreIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoreInDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoreInDetail.Designer.cs">
+      <DependentUpon>FrmStoreInDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DestroyDetailViewModel.cs" />
+    <Compile Include="Models\InventoryDemolitionViewModel.cs" />
+    <Compile Include="Models\InventoryStatisticDetailViewModel.cs" />
+    <Compile Include="Models\InventoryViewModel.cs" />
+    <Compile Include="Models\ProductDestroyViewModel.cs" />
+    <Compile Include="Models\ProductViewModel.cs" />
+    <Compile Include="Models\RecommendPositionViewModel.cs" />
+    <Compile Include="Models\StoreOutReviewIdentity.cs" />
+    <Compile Include="Models\UnqualifiedMoveDetailViewModel.cs" />
+    <Compile Include="Models\UnqualifiedMoveViewModel.cs" />
+    <Compile Include="Models\WMSUser.cs" />
+    <Compile Include="Utils\DeviceHelper.cs" />
+    <Compile Include="Utils\MobileConfiguration.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCollection.resx">
+      <DependentUpon>FrmCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInitStoreIn.resx">
+      <DependentUpon>FrmInitStoreIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventoryQuery.resx">
+      <DependentUpon>FrmInventoryQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductSummaryDetail.resx">
+      <DependentUpon>FrmProductSummaryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductSummary.resx">
+      <DependentUpon>FrmProductSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductTransferSource.resx">
+      <DependentUpon>FrmProductTransferSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoreIn.resx">
+      <DependentUpon>FrmStoreIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoreInDetail.resx">
+      <DependentUpon>FrmStoreInDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoreOut.resx">
+      <DependentUpon>FrmStoreOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoreOutDetail.resx">
+      <DependentUpon>FrmStoreOutDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductTransferConfirmation.resx">
+      <DependentUpon>FrmProductTransferConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDemolitionConfirmation.resx">
+      <DependentUpon>FrmDemolitionConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDemolition.resx">
+      <DependentUpon>FrmDemolition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnqualifiedStoreIn.resx">
+      <DependentUpon>FrmUnqualifiedStoreIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnqualifiedStoreInDetail.resx">
+      <DependentUpon>FrmUnqualifiedStoreInDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurchaseReturnStoreOut.resx">
+      <DependentUpon>FrmPurchaseReturnStoreOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurchaseReturnStoreOutDetail.resx">
+      <DependentUpon>FrmPurchaseReturnStoreOutDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnqualifiedMove.resx">
+      <DependentUpon>FrmUnqualifiedMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnqualifiedMoveDetail.resx">
+      <DependentUpon>FrmUnqualifiedMoveDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductDestroy.resx">
+      <DependentUpon>FrmProductDestroy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductDestroyDetail.resx">
+      <DependentUpon>FrmProductDestroyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemStoreIn.resx">
+      <DependentUpon>FrmSystemStoreIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmStoreOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoreOut.Designer.cs">
+      <DependentUpon>FrmStoreOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoreOutDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoreOutDetail.Designer.cs">
+      <DependentUpon>FrmStoreOutDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductTransferConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductTransferConfirmation.Designer.cs">
+      <DependentUpon>FrmProductTransferConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDemolitionConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDemolitionConfirmation.Designer.cs">
+      <DependentUpon>FrmDemolitionConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDemolition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDemolition.Designer.cs">
+      <DependentUpon>FrmDemolition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SqlMapper.cs" />
+    <Compile Include="Models\StoreBill.cs" />
+    <Compile Include="Models\StoreBillInViewModel.cs" />
+    <Compile Include="Models\StoreBillOutViewModel.cs" />
+    <Compile Include="Models\StoreInDetailViewModel.cs" />
+    <Compile Include="Models\StoreOutDetailViewModel.cs" />
+    <Compile Include="Models\TransferProductViewModel.cs" />
+    <Compile Include="FrmUnqualifiedStoreIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnqualifiedStoreIn.Designer.cs">
+      <DependentUpon>FrmUnqualifiedStoreIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnqualifiedStoreInDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnqualifiedStoreInDetail.Designer.cs">
+      <DependentUpon>FrmUnqualifiedStoreInDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPurchaseReturnStoreOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurchaseReturnStoreOut.Designer.cs">
+      <DependentUpon>FrmPurchaseReturnStoreOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPurchaseReturnStoreOutDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurchaseReturnStoreOutDetail.Designer.cs">
+      <DependentUpon>FrmPurchaseReturnStoreOutDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnqualifiedMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnqualifiedMove.Designer.cs">
+      <DependentUpon>FrmUnqualifiedMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnqualifiedMoveDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnqualifiedMoveDetail.Designer.cs">
+      <DependentUpon>FrmUnqualifiedMoveDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductDestroy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductDestroy.Designer.cs">
+      <DependentUpon>FrmProductDestroy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductDestroyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductDestroyDetail.Designer.cs">
+      <DependentUpon>FrmProductDestroyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemStoreIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemStoreIn.Designer.cs">
+      <DependentUpon>FrmSystemStoreIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pda.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ed4506af723a4b17be2932a30e03c199" Name="Diagram1" ZoomLevel="60">
+        <EntityTypeShape EntityType="WMS.Models.ElectronicLabel" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.Product" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.ProductStructure" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.StorageStructure" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.Warehouse" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.CargoSpaceStoreDetail" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.InventoryDemolition" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.StoreInHistory" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.StoreOutHistory" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS.Models.LabelStructure" Width="1.5" PointX="11.375" PointY="5.75" />
+        <EntityTypeShape EntityType="WMS.Models.LabelTask" Width="1.5" PointX="11.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreBill" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreBillBarCode" Width="1.5" PointX="5.375" PointY="13.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreBillDetail" Width="1.5" PointX="7.375" PointY="13.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSStoreBillDetail" Width="1.5" PointX="13.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMS.Models.PDATask" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMS.Models.Review" Width="1.5" PointX="15.375" PointY="6.75" />
+        <EntityTypeShape EntityType="WMS.Models.ReviewDetail" Width="1.5" PointX="15.375" PointY="13.75" />
+        <EntityTypeShape EntityType="WMS.Models.Bill" Width="1.5" PointX="0.75" PointY="16.75" />
+        <EntityTypeShape EntityType="WMS.Models.RegulatoryCode" Width="1.5" PointX="9.375" PointY="16.75" />
+        <EntityTypeShape EntityType="WMS.Models.Category" Width="1.5" PointX="11.375" PointY="16.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreDetail" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSUser" Width="1.5" PointX="17.375" PointY="7.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSStoreInDetail" Width="1.5" PointX="17.375" PointY="11.75" />
+        <EntityTypeShape EntityType="WMS.Models.UnqualifiedStoreDetail" Width="1.5" PointX="17.375" PointY="17.75" />
+        <EntityTypeShape EntityType="WMS.Models.InventoryStatistic" Width="1.5" PointX="3.375" PointY="18.75" />
+        <EntityTypeShape EntityType="WMS.Models.InventoryStatisticDetail" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSReviewHistory" Width="1.5" PointX="19.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSCargoSpaceStoreDetailChangeHistory" Width="3.625" PointX="19.375" PointY="15.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreDetailChangeHistory" Width="2.375" PointX="5.375" PointY="20.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreOutErrorLog" Width="1.5" PointX="8.375" PointY="20.75" />
+        <EntityTypeShape EntityType="WMS.Models.StoreOutReviewIdentity" Width="1.5" PointX="13.375" PointY="20.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSScannedRegulatoryCode" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMS.Models.Dealer" Width="1.5" PointX="10.375" PointY="21.75" />
+        <EntityTypeShape EntityType="WMS.Models.RegulatoryCustomer" Width="1.5" PointX="21.375" PointY="4.75" />
+        <EntityTypeShape EntityType="WMS.Models.WMSMonitoringSetting" Width="1.5" PointX="21.375" PointY="7.75" />
+        <EntityTypeShape EntityType="WMS.Models.ATC_User" Width="1.5" PointX="19.375" PointY="22.75" />
+        <EntityTypeShape EntityType="WMS.Models.ATC_UserPage" Width="1.5" PointX="21.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WMS.Models.ATC_Approve" Width="1.5" PointX="21.375" PointY="22.75" />
+        <EntityTypeShape EntityType="WMS.Models.ATC_ApproveNotification" Width="1.5" PointX="23.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMS.Models.BUS_ReviewBack" Width="1.5" PointX="23.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
